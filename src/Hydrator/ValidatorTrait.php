@@ -128,7 +128,7 @@ trait ValidatorTrait
         return $this->validator->validate($date, new Date());
     }
 
-    private function getValidator(string $type): ?string
+    private function getValidator(?string $type): ?string
     {
         switch ($type) {
             case 'date':
